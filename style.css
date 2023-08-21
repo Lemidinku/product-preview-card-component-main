@@ -1,0 +1,133 @@
+    
+@import url('https://fonts.googleapis.com/css?family=Fraunces');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+
+    margin: 150px auto;
+    background-color: #fff;
+    max-width: 550px;
+    min-height: 400px;
+    display:flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image{
+    width:50%;
+    background-image: url("./images/image-product-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.description{
+    width:50%;
+    font-family: "Fraunces";
+    font-weight: 700;
+    padding-bottom: 1em;
+}
+
+.description >*{
+    margin-left: 30px !important;
+    margin-right:30px !important;
+
+}
+
+
+.product_type , .full_desc, .old_price {
+    font-family: "Montserrat", 'Times New Roman', Times, serif;
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 700;
+}
+
+.product_type{
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+
+.product_name {
+    line-height: 1em;
+    margin-bottom: 20px;
+}
+
+.full_desc {
+    line-height: 1.7em;
+    padding-right: 0.7em;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    text-align: left;
+    
+
+}
+
+.new_price {
+    color:  hsl(158, 36%, 37%);
+    font-size: 30px;
+    margin:0;
+
+}
+.old_price {
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+
+.cart_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    background-color: hsl(158, 36%, 37%);
+    width:80%;
+    height: 40px;
+    color:white;
+    border-radius: 10px;
+    border:none;
+    margin-top: 20px;
+}
+.cart_button:hover{
+background-color:hsl(159, 74%, 18%);
+}
+
+
+
+@media (max-width:475px) {
+    .container{
+        width: 90vw;
+        /* min-height: 700px; */
+        max-height: unset;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+    }
+
+    .image{
+        width: 100%;
+        min-height: 300px;
+        height: 40%;
+        background-image: url("./images/image-product-mobile.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .description{
+        width: 100%;
+        min-height: 350px;
+
+    /* padding-bottom: 10%; */
+        
+    }
+}
